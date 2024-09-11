@@ -1,0 +1,342 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+body {
+    color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    background-color: #04041d;
+    box-shadow: #000000 2px 2px 4px;
+    padding: 0.7rem;
+    border: solid black;
+}
+
+header p img {
+    width: 50px;
+    height: 50px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.title {
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+.title:hover p {
+    text-shadow: #f5f5f5 1px 1px 2px;
+    transition: 1s;
+}
+
+main {
+    /* background-image: url('https://www.chromethemer.com/wallpapers/chromebook-wallpapers/images/960/pokemon-chromebook-wallpaper.jpg'); */
+    background-image: url('https://images8.alphacoders.com/124/1243956.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+main img {
+    max-width: fit-content;
+    width: 51%;
+    max-height: fit-content;
+    height: 51%;
+}
+
+.pokemon-img {
+    width: 12%;
+    height: 12%;
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-63%, 20%);
+}
+
+.pokemon-data {
+    position: absolute;
+    font-weight: 600;
+    color: #04041d;
+    top: 54.5%;
+    right: 42%;
+    /* font-size: 120%; */
+    font-size: clamp(8px, 2.6vw, 25px);
+}
+
+.pokemon-name {
+    color: #04041d;
+    text-transform: capitalize;
+}
+
+.form {
+    position: absolute;
+    width: 30%;
+    top: 65%;
+    left: 33%;
+}
+
+.input-search {
+    text-align: center;
+    width: 100%;
+    padding: 1%;
+    outline: none;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-size: clamp(8px, 2.6vw, 1rem);
+    box-shadow: -3px 2px 0 #888, -5px 5px 0 #333;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 10%;
+    left: 51%;
+    width: 65%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 1rem;
+}
+
+.button {
+    width: 25%;
+    padding: 0.5rem;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: -2px 3px 0 #474747, -4px 6px 0 #00000085;
+    background-color: #363636;
+    font-size: clamp(8px, 2.6vw, 1rem);
+    color: #f5f5f5;
+}
+
+.button:hover {
+    text-shadow: #f5f5f5 1px 1px 2px;
+}
+
+.button:active {
+    box-shadow: inset -1px 1px 0 #000;
+    font-size: 0.8rem;
+}
+
+footer {
+    background-color: #000000;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 2.4rem;
+}
+
+footer:hover p {
+    text-shadow: #f5f5f5 1px 1px 2px;
+    transition: 1s;
+}
+
+footer a {
+    color: #f5f5f5;
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+
+footer a:hover {
+    color: rgb(27, 85, 173);
+    /* text-shadow: #f5f5f5 1px 1px 2px; */
+    transition: 1s;
+}
+
+@media (min-width: 0px) {
+    /* celular p */
+    /* header {
+        background-color: antiquewhite;
+    } */
+
+    .form {
+        position: absolute;
+        width: 30%;
+        top: 65%;
+        left: 34%;
+    }
+
+    .buttons {
+        position: absolute;
+        bottom: 17%;
+        left: 69%;
+        width: 60%;
+        transform: translate(-57%, 0);
+        display: flex;
+        gap: 1rem;
+    }
+
+    .button {
+        width: 20%;
+        padding: 1.6%;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+
+}
+
+@media (min-width: 576px) {
+    /* celular m */
+    /* header {
+        background-color: yellow;
+    } */
+
+    .form {
+        position: absolute;
+        width: 30%;
+        top: 65%;
+        left: 34%;
+    }
+
+    .buttons {
+        position: absolute;
+        bottom: 17%;
+        left: 69%;
+        width: 60%;
+        transform: translate(-57%, 0);
+        display: flex;
+        gap: 1rem;
+    }
+
+    .button {
+        width: 20%;
+        padding: 1.6%;
+    }
+
+    footer {
+        padding: 1.5rem;
+    }
+
+}
+
+@media (min-width: 768px) {
+    /* tablet */
+    /* header {
+        background-color: rgb(42, 161, 122);
+    } */
+
+    .form {
+        position: absolute;
+        width: 27%;
+        top: 65%;
+        left: 35%;
+    }
+
+    .buttons {
+        position: absolute;
+        bottom: 17%;
+        left: 70%;
+        width: 60%;
+        transform: translate(-57%, 0);
+        display: flex;
+        gap: 1rem;
+    }
+
+    .button {
+        width: 20%;
+        padding: 1.6%;
+    }
+
+    main img {
+        max-width: fit-content;
+        width: 40%;
+        max-height: fit-content;
+        height: 40%;
+    }
+
+    footer {
+        padding: 1.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    /* laptop */
+    /* header {
+        background-color: blue;
+    } */
+
+    .form {
+        position: absolute;
+        width: 23%;
+        top: 65%;
+        left: 37.4%;
+    }
+
+    .buttons {
+        position: absolute;
+        bottom: 17%;
+        left: 71.6%;
+        width: 60%;
+        transform: translate(-57%, 0);
+        display: flex;
+        gap: 1rem;
+    }
+
+    .button {
+        width: 18%;
+        padding: 1.6%;
+    }
+
+    main img {
+        max-width: fit-content;
+        width: 33%;
+        max-height: fit-content;
+        height: 33%;
+    }
+
+    footer {
+        padding: 1.9rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* desktop */
+    /* header {
+        background-color: blueviolet;
+    } */
+
+    .form {
+        position: absolute;
+        width: 21%;
+        top: 65%;
+        left: 38.4%;
+    }
+
+    .buttons {
+        position: absolute;
+        bottom: 17%;
+        left: 72.9%;
+        width: 60%;
+        transform: translate(-57%, 0);
+        display: flex;
+        gap: 1rem;
+    }
+
+    .button {
+        width: 16%;
+        padding: 1.6%;
+    }
+
+    main img {
+        max-width: fit-content;
+        width: 30%;
+        max-height: fit-content;
+        height: 30%;
+    }
+
+    footer {
+        padding: 1.9rem;
+    }
+}
